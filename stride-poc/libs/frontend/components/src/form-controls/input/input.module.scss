@@ -1,0 +1,83 @@
+.input {
+    &-wrapper {
+        @apply relative grid gap-1.5;
+
+        .input {
+            @apply leading-6 text-Black-950 w-full border-none outline-none;
+
+            &::placeholder {
+                @apply text-Black-400;
+            }
+
+            &__icon {
+                @apply text-[#666666];
+            }
+
+            &-field {
+                @apply bg-White;
+
+                &:has(> .input:focus-within) {
+                    @apply border-Blue-500 transition-all duration-300;
+                }
+            }
+
+            &[type='number'] {
+                -moz-appearance: textfield;
+            }
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+
+        .helper-text {
+            @apply text-Black-400 flex items-center gap-0.5;
+            user-select: none;
+        }
+
+        &.--textarea {
+            .input-field {
+                height: unset !important;
+                @apply items-start;
+            }
+
+            .input {
+                @apply py-0.5;
+            }
+
+            .input__icon {
+                @apply py-1;
+            }
+        }
+
+        &.input-error {
+
+            .input-field,
+            .input-field:has(> .input:focus-within) {
+                @apply border-Red-500 duration-300 transition-all;
+            }
+
+            .helper-text {
+                @apply text-Red-500;
+            }
+        }
+
+        &.input-disabled {
+
+            .input-field,
+            .input-field:has(> .input:focus-within) {
+                @apply bg-Black-50 border-Black-100;
+            }
+
+            input::placeholder {
+                @apply text-Black-700;
+            }
+        }
+    }
+
+    &-field {
+        @apply border border-Black-100 rounded-sm px-3.5 py-2 relative flex items-center h-11 gap-3.5 text-Black-500;
+    }
+}

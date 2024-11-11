@@ -1,0 +1,27 @@
+.toast {
+    @apply w-[27rem] py-3 px-4 gap-2 flex rounded-lg border drop-shadow-lg;
+
+    &__message {
+        flex: 1
+    }
+
+    &__close {
+        cursor: pointer;
+    }
+
+    &--info {
+        @apply bg-Blue-50 border-Blue-100;
+    }
+
+    &--error {
+        @apply bg-Red-50 border-Red-100;
+    }
+
+    &--success {
+        @apply bg-[#EEF7F2] border-[#76BC98];
+    }
+
+    &--warning {
+        @apply bg-Warning-50 border-Warning-100;
+    }
+}

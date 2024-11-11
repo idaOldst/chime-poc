@@ -1,0 +1,37 @@
+.badge {
+    font-size: 0.625rem;
+    line-height: 1rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.15px;
+    border: 1px solid;
+    @apply px-2 py-0.5 rounded-lg;
+
+    &.--md {
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+    }
+
+    &.--lg {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    &.success {
+        @apply bg-[#EEF7F2] text-[#438965] border-[#A1D1B8];
+    }
+
+    &.warning {
+        @apply bg-Warning-50 text-Warning-400 border-Warning-300;
+    }
+
+    &.danger {
+        @apply bg-Red-50 text-Red-500 border-Red-400;
+    }
+
+    &.neutral {
+        @apply bg-Black-50 text-Black-950 border-Black-300;
+    }
+}

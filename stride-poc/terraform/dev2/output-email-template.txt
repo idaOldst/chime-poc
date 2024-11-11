@@ -1,0 +1,4 @@
+The push refers to repository [438465146018.dkr.ecr.eu-west-2.amazonaws.com/nx-template2-dev2-email-template-api-service]
+63ca1fbb43ae: Preparing
+63ca1fbb43ae: Pushed
+latest: digest: sha256:33735bd63cf84d7e388d9f6d297d348c523c044410f553bd878c6d7829612735 size: 528

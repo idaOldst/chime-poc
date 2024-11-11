@@ -1,0 +1,35 @@
+.header {
+    @apply h-[5rem];
+    background: linear-gradient(90.12deg,
+            theme('colors.Red-500') 0.8%,
+            #bd3d49 51.34%,
+            #ff384b 97.28%);
+
+    &__content {
+        @apply mx-auto max-w-7xl px-10 flex items-center justify-between text-[#fff];
+        height: inherit;
+    }
+
+    &__home {
+        @apply flex items-center;
+        height: inherit;
+
+        img {
+            @apply py-2 object-cover;
+            height: inherit;
+        }
+    }
+
+    &__menu {
+        @apply flex;
+        height: inherit;
+
+        &-item {
+            @apply px-5 cursor-pointer flex-centered;
+
+            &.--selected {
+                @apply bg-Red-600 h-full;
+            }
+        }
+    }
+}

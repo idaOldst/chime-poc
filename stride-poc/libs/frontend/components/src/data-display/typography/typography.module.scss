@@ -1,0 +1,79 @@
+.h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 2.8125rem;
+}
+
+.h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+
+.h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.875rem;
+}
+
+.h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.h6 {
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.body1,
+.body1-thicker,
+.body1-link,
+.body1-caption,
+.body1-caption-link,
+.medium-label {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+.body1-thicker {
+    font-weight: 700;
+}
+
+.body1-link,
+.body1-caption-link {
+    @apply text-Black-800;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.body1-caption,
+.body1-caption-link,
+.small-label {
+    font-size: 0.75rem;
+}
+
+.body2,
+.body2-thicker,
+.body2-link,
+.large-label {
+    font-size: 1rem;
+}
+
+.body2-thicker {
+    font-weight: 700;
+}
+
+.body2-link {
+    @apply text-Black-800;
+    text-decoration: underline;
+    cursor: pointer;
+}

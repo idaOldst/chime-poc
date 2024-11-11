@@ -1,0 +1,31 @@
+@import 'react-day-picker/src/style.css';
+
+.rdp {
+    --rdp-cell-size: 1.75rem;
+    --rdp-accent-color: theme('colors.Blue-500');
+    --rdp-background-color: theme('colors.Blue-50');
+    /* Outline border for focused elements */
+    --rdp-outline: 2px solid var(--rdp-accent-color);
+    /* Outline border for focused and selected elements */
+    --rdp-outline-selected: 2px solid rgba(0, 0, 0, 0.75);
+
+    margin: 0;
+
+    &-month {
+        margin: 0 0.25rem;
+    }
+
+    &-caption {
+        margin: 0;
+    }
+
+    &-button:hover {
+        border-radius: 4px;
+    }
+
+    &-day {
+        &_outside p {
+            color: theme('colors.Black-300');
+        }
+    }
+}

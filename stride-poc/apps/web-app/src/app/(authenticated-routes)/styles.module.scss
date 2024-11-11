@@ -1,0 +1,7 @@
+.authenticated-route {
+    @apply bg-Black-50 h-screen overflow-y-auto;
+
+    &__content {
+        @apply m-10;
+    }
+}
